@@ -4,13 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f32dfec8d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" href="assets/images/favicon-32x32.png">
     <title>IP Locator</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="top">
+            <h1>IP Adress Tracker</h1>
+            <form id="formulario" method="POST">
+                <div class="field">
+                    <input type="text" placeholder="Search for any IP address or domain" id="ip_address">
+                    <button type="submit">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="showResult">
+                <div class="box IP">
+                    <h2>IP ADDRESS</h2>
+                    <p></p>
+                </div>
+                <div class="box LOCATION">
+                    <h2>LOCATION</h2>
+                    <p></p>
+                </div>
+                <div class="box TIMEZONE">
+                    <h2>TIMEZONE</h2>
+                    <p></p>
+                </div>
+                <div class="box ISP">
+                    <h2>ISP</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom" id="map">
+            <!--  <h2>bottom part</h2> -->
+        </div>
+    </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
